@@ -28,7 +28,7 @@ export class SetupServer extends Server {
   }
 
   private async databaseSetup(): Promise<void> {
-    await database.connect;
+    await database.connect();
   }
 
   public async close(): Promise<void> {
